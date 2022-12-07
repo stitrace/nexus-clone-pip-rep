@@ -31,7 +31,7 @@ parser.add_argument('-s', '--source', help='Specify source repo name, for exampl
 parser.add_argument('-d', '--dest', required=True, help='Specify name of destination repo, for example: production-hotfix-1234')
 parser.add_argument('-u', '--user', required=auth_req, help='Nexus login (or set NEXUS_USER enviroment var)')
 parser.add_argument('-p', '--password', required=auth_req, help='Nexus password (or set NEXUS_PASSWORD enviroment var)')
-parser.add_argument('-f', '--fqdn', required=auth_req, help='Nexus fqdn e.g. nexus.example.com')
+parser.add_argument('-f', '--fqdn', required=True, help='Nexus fqdn e.g. nexus.example.com')
 
 args = parser.parse_args()
 
